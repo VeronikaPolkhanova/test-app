@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div className="squareContainer">
-        <Square text="1" />
+        <Square id="movingSquare" text="1" />
         <Square text="2" />
       </div>
       <Button text={timer} isDisabled={isDisabled} onStart={onStart} />

@@ -1,11 +1,38 @@
 .squareContainer {
   min-height: 300px;
+  padding: 20px;
+
+  position: relative;
+
   display: flex;
   align-items: center;
   gap: 100px;
 }
 
+@keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 300px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+#movingSquare {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation: move 4s infinite;
+}
+
 .square {
+  position: absolute;
+  left: 200px;
   height: 20px;
   width: 20px;
 
