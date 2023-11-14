@@ -27,7 +27,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  animation: move 4s infinite;
+  animation: move 5s infinite;
 }
 
 .square {
@@ -40,6 +40,14 @@
   color: #ffffff;
 
   text-align: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
 }
 
 button {

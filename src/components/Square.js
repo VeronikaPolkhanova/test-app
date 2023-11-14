@@ -1,8 +1,8 @@
 import React from "react";
 
-const Square = ({ text, id }) => {
+const Square = ({ text, refProp, id }) => {
   return (
-    <div id={id} className="square">
+    <div id={id} ref={refProp} className="square">
       {text}
     </div>
   );
